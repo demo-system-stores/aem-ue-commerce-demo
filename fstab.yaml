@@ -1,6 +1,6 @@
 mountpoints:
   /:
-    url: "https://author-p154011-e1839903.adobeaemcloud.com/bin/franklin.delivery/demo-system-stores/aem-ue-commerce-demo/sync-fork-october-release"
+    url: "https://author-p154011-e1839903.adobeaemcloud.com/bin/franklin.delivery/demo-system-stores/aem-ue-commerce-demo/main"
     type: "markup"
     suffix: ".html"
 folders:
