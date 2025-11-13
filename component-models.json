@@ -255,6 +255,12 @@
         "description": "Enable the ability to estimate shipping costs"
       },
       {
+        "component": "boolean",
+        "name": "undo-remove-item",
+        "label": "Enable Undo Remove Item",
+        "description": "Enable the ability to undo the removal of an item from the cart"
+      },
+      {
         "component": "number",
         "name": "max-items",
         "label": "Max Items",
@@ -288,6 +294,12 @@
         "name": "enable-updating-product",
         "label": "Enable Updating Product",
         "description": "Enable Updating Product"
+      },
+      {
+        "component": "boolean",
+        "name": "undo-remove-item",
+        "label": "Enable Undo Remove Item",
+        "description": "Enable the ability to undo the removal of an item from the cart"
       }
     ]
   },
@@ -440,6 +452,56 @@
     ]
   },
   {
+    "id": "product-teaser",
+    "fields": [
+      {
+        "component": "text",
+        "name": "sku",
+        "label": "Product SKU",
+        "description": "The SKU of the product to display",
+        "required": true
+      },
+      {
+        "component": "select",
+        "name": "layout",
+        "label": "Layout Style",
+        "description": "Choose the teaser layout style",
+        "options": [
+          {
+            "name": "Card",
+            "value": "card"
+          },
+          {
+            "name": "Horizontal",
+            "value": "horizontal"
+          },
+          {
+            "name": "Minimal",
+            "value": "minimal"
+          }
+        ]
+      },
+      {
+        "component": "boolean",
+        "name": "showprice",
+        "label": "Show Price",
+        "description": "Display product price"
+      },
+      {
+        "component": "boolean",
+        "name": "showaddtocart",
+        "label": "Show Add to Cart",
+        "description": "Display add to cart button"
+      },
+      {
+        "component": "boolean",
+        "name": "showwishlist",
+        "label": "Show Wishlist",
+        "description": "Display wishlist toggle button"
+      }
+    ]
+  },
+  {
     "id": "page-metadata",
     "fields": [
       {
@@ -503,6 +565,13 @@
         "valueType": "string",
         "value": "pdp",
         "readOnly": true
+      },
+      {
+        "component": "text",
+        "name": "sku",
+        "label": "SKU",
+        "valueType": "string",
+        "description": "Set SKU of the product if value is case sensitive"
       }
     ]
   },
