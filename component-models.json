@@ -414,6 +414,37 @@
         "value": "",
         "label": "Text",
         "valueType": "string"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "buttonText",
+        "label": "Button Text",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "buttonLink",
+        "label": "Button Link",
+        "value": ""
+      },
+      {
+        "component": "select",
+        "name": "buttonType",
+        "label": "Button Type",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "primary",
+            "value": "primary"
+          },
+          {
+            "name": "secondary",
+            "value": "secondary"
+          }
+        ],
+        "value": "primary"
       }
     ]
   },
@@ -448,6 +479,56 @@
         "label": "Record ID",
         "description": "Record ID",
         "required": true
+      }
+    ]
+  },
+  {
+    "id": "product-teaser",
+    "fields": [
+      {
+        "component": "text",
+        "name": "sku",
+        "label": "Product SKU",
+        "description": "The SKU of the product to display",
+        "required": true
+      },
+      {
+        "component": "select",
+        "name": "layout",
+        "label": "Layout Style",
+        "description": "Choose the teaser layout style",
+        "options": [
+          {
+            "name": "Card",
+            "value": "card"
+          },
+          {
+            "name": "Horizontal",
+            "value": "horizontal"
+          },
+          {
+            "name": "Minimal",
+            "value": "minimal"
+          }
+        ]
+      },
+      {
+        "component": "boolean",
+        "name": "showprice",
+        "label": "Show Price",
+        "description": "Display product price"
+      },
+      {
+        "component": "boolean",
+        "name": "showaddtocart",
+        "label": "Show Add to Cart",
+        "description": "Display add to cart button"
+      },
+      {
+        "component": "boolean",
+        "name": "showwishlist",
+        "label": "Show Wishlist",
+        "description": "Display wishlist toggle button"
       }
     ]
   },

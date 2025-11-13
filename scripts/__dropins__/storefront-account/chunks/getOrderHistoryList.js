@@ -80,6 +80,9 @@ import{t as L,f as H,a as Y}from"./removeCustomerAddress.js";import{c as j}from"
       }
     }
   }
+  ${B}
+  ${V}
+`,e={sort_direction:"DESC",sort_field:"CREATED_AT"},sa=async(a,o,s)=>{const c=o.includes("viewAll")?{}:{order_date:JSON.parse(o)};return await j(m,{method:"GET",cache:"no-cache",variables:{pageSize:a,currentPage:s,filter:c,sort:e}}).then(d=>Z(d)).catch(J)};export{sa as g};
   ${K}
   ${Q}
 `,Z={sort_direction:"DESC",sort_field:"CREATED_AT"},oa=async(a,o,c)=>{const _=o.includes("viewAll")?{}:{order_date:JSON.parse(o)};return await H(X,{method:"GET",cache:"no-cache",variables:{pageSize:a,currentPage:c,filter:_,sort:Z}}).then(d=>W(d)).catch(Y)};export{oa as g};

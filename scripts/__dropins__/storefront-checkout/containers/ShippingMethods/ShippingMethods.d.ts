@@ -1,5 +1,6 @@
 import { ShippingMethod } from '../../data/models';
-import { Filter, TitleProps, UIComponentType } from '../../types';
+import { UIComponentType } from '../../types/ComponentTypes';
+import { TitleProps } from '../../types/TitleProps';
 import { Container } from '@dropins/tools/types/elsie/src/lib';
 import { HTMLAttributes } from 'preact/compat';
 
@@ -7,7 +8,6 @@ interface CartSyncError {
     method: ShippingMethod;
     error: Error;
 }
-export type ShippingOptionsFilter = Filter<ShippingMethod>;
 export interface ShippingMethodsProps extends HTMLAttributes<HTMLDivElement>, TitleProps {
     UIComponentType?: UIComponentType;
     active?: boolean;

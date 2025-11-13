@@ -8,4 +8,3 @@ const e=`
     email
   }
 `;export{e as CUSTOMER_INFORMATION_FRAGMENT};
-//# sourceMappingURL=fragments.js.map

@@ -6,8 +6,9 @@
  * file in accordance with the terms of the Adobe license agreement
  * accompanying it.
  *******************************************************************/
+export * from './ProductList';
 export * from './Facets';
-export * from './Pagination';
-export * from './SearchResults';
-export * from './SortBy';
+export * from './ResultsInfo';
+export * from './SearchBarInput';
+export * from './SearchBarResults';
 //# sourceMappingURL=index.d.ts.map

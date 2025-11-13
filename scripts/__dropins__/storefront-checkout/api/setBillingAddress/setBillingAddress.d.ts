@@ -1,4 +1,4 @@
-import { BillingAddressInput as BillingAddressInputModel } from '../../data/models';
+import { BillingAddressInput } from '../../data/models';
 
-export declare const setBillingAddress: (input: BillingAddressInputModel) => Promise<import('../../data/models').Cart | import('../../data/models').NegotiableQuote | null | undefined>;
+export declare const setBillingAddress: ({ address, customerAddressId, sameAsShipping, useForShipping, }: BillingAddressInput) => Promise<import('../../data/models').Cart | undefined>;
 //# sourceMappingURL=setBillingAddress.d.ts.map

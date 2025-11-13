@@ -1,19 +1,19 @@
-import { Address, PaymentMethod, ShippingAddress } from '.';
+import { Address, PaymentMethod, ShippingMethod } from '.';
 
-export interface CartAddress extends Address {
-}
-export type CartShippingAddress = CartAddress & ShippingAddress & {
+export interface ShippingAddress extends Address {
+    availableShippingMethods?: ShippingMethod[];
+    selectedShippingMethod?: ShippingMethod;
     sameAsBilling?: boolean;
-};
+}
 export interface Cart {
     availablePaymentMethods?: PaymentMethod[];
-    billingAddress?: CartAddress;
+    billingAddress?: Address;
     email?: string;
     id: string;
     isEmpty: boolean;
     isGuest: boolean;
     isVirtual: boolean;
     selectedPaymentMethod?: PaymentMethod;
-    shippingAddresses: CartShippingAddress[];
+    shippingAddresses?: ShippingAddress[];
 }
 //# sourceMappingURL=cart.d.ts.map

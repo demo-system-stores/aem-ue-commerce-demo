@@ -59,7 +59,6 @@ interface OptionValue {
     product?: any;
 }
 interface Attribute {
-    id: string;
     label: string;
     value: string;
 }

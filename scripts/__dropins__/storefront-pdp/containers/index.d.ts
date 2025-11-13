@@ -20,7 +20,6 @@ export * from './ProductQuantity';
 export * from './ProductShortDescription';
 export * from './ProductDescription';
 export * from './ProductAttributes';
-export * from './ProductGiftCardOptions';
 export * from './ProductGallery';
 export * from './ProductHeader';
 //# sourceMappingURL=index.d.ts.map

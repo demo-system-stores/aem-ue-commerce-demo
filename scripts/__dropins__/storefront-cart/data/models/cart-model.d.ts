@@ -105,7 +105,6 @@ export interface Item {
         senderName: string;
         message: string;
     };
-    priceTiers: PriceTier[];
     giftMessageAvailable: boolean | null;
     taxedPrice: Price;
     rowTotal: Price;
@@ -130,7 +129,6 @@ export interface Item {
     bundleOptions?: {
         [key: string]: any;
     };
-    bundleOptionsUIDs?: string[];
     selectedOptions?: {
         [key: string]: any;
     };
@@ -155,14 +153,6 @@ export interface Item {
     savingsAmount?: Price;
     productAttributes?: Attribute[];
     fixedProductTaxes?: FixedProductTax[];
-}
-interface PriceTier {
-    quantity: number;
-    final_price: Price;
-    discount: {
-        amount_off: number;
-        percent_off: number;
-    };
 }
 interface ItemError {
     id: string;

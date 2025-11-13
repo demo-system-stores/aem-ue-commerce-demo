@@ -22,8 +22,6 @@ export interface CartTableEntry {
     subtotal: VNode;
     /** Actions bar on the bottom of the row */
     actions: VNode;
-    /** Optional undo banner for removed items */
-    undoBanner?: VNode;
 }
 /**
  * Props for the CartSummaryTable component

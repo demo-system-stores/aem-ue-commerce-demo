@@ -347,8 +347,22 @@ header nav .nav-tools-wrapper > button {
 header nav .nav-tools button.nav-cart-button {
   background-image: url('../../icons/cart.svg');
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left center;
+  background-size: 20px;
   position: relative;
+  width: auto;
+  padding-left: 30px;
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+header nav .nav-tools button.nav-cart-button .cart-text {
+  font: var(--type-body-2-strong-font);
+  letter-spacing: var(--type-body-2-strong-letter-spacing);
+  color: var(--color-brand-700);
+  white-space: nowrap;
 }
 
 header nav .nav-tools button.nav-cart-button[data-count]::after {
@@ -375,10 +389,24 @@ header nav .nav-tools button.nav-wishlist-button {
 }
 
 header nav .nav-tools button.nav-search-button {
-  font-size: 0;
+  font-size: inherit;
   background-image: url('../../icons/search.svg');
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left center;
+  background-size: 20px;
+  width: auto;
+  padding-left: 30px;
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+header nav .nav-tools button.nav-search-button .search-text {
+  font: var(--type-body-2-strong-font);
+  letter-spacing: var(--type-body-2-strong-letter-spacing);
+  color: var(--color-brand-700);
+  white-space: nowrap;
 }
 
 header .nav-search-panel {

@@ -9,10 +9,6 @@ export type Values = {
     sku: string;
     quantity: number;
     optionsUIDs?: string[];
-    enteredOptions?: Array<{
-        uid: string;
-        value: string;
-    }>;
 };
 /** @deprecated This type is part of the deprecated ProductDetails component. */
 type DefaultSlotContext = {

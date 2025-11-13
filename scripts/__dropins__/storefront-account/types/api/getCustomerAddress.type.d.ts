@@ -42,7 +42,6 @@ export interface UserAddressesProps {
         code: string;
         value: string;
     }[];
-    uid?: string;
 }
 export interface AddressResponse {
     data: {

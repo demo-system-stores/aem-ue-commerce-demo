@@ -46,8 +46,8 @@ interface ItemImage {
     url: string;
 }
 export interface Price {
-    value: number;
-    currency: string;
+    value: number | null;
+    currency: string | null;
 }
 export interface FinalPrice {
     final?: {

@@ -9,6 +9,5 @@ export declare const addProductsToCart: (items: {
         uid: string;
         value: string;
     }[];
-    customFields?: Record<string, any>;
 }[]) => Promise<CartModel | null>;
 //# sourceMappingURL=addProductsToCart.d.ts.map

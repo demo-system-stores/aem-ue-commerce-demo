@@ -2,7 +2,7 @@ import { PaymentMethod, ShippingMethod } from '.';
 
 export interface ValuesModel {
     email: string;
-    isBillToShipping: boolean | undefined;
+    isBillToShipping: boolean;
     selectedPaymentMethod: PaymentMethod | null;
     selectedShippingMethod: ShippingMethod | null;
 }

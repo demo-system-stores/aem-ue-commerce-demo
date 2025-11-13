@@ -15,7 +15,7 @@
  * from Adobe.
  *******************************************************************/
 export type Country = {
-    code: string;
+    value: string;
     label: string;
 };
 //# sourceMappingURL=country.d.ts.map

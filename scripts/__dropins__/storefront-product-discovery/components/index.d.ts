@@ -10,4 +10,8 @@ export * from './ProductList';
 export * from './SearchAlertMessage';
 export * from './Facet';
 export * from './FacetList';
+export * from './ResultsInfo';
+export * from './SearchBarInput';
+export * from './SearchBarResults';
+export * from './ProductItem';
 //# sourceMappingURL=index.d.ts.map

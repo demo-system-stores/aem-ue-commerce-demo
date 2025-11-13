@@ -134,12 +134,7 @@ declare const _default: {
       "discountPercentage": "{discount}% off",
       "savingsAmount": "Savings",
       "includingTax": "Incl. tax",
-      "excludingTax": "Excl. tax",
-      "itemBeingRemoved": "\"{product}\" is being removed",
-      "itemRemoved": "\"{product}\" was removed",
-      "itemRemovedDescription": "Changed your mind? You can undo this action.",
-      "undoAction": "Undo",
-      "dismissAction": "Dismiss"
+      "excludingTax": "Excl. tax"
     },
     "EstimateShipping": {
       "label": "Shipping",

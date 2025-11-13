@@ -57,12 +57,12 @@ const e = `
     currency
   }
   expiration_date
-}`, i = `fragment GIFT_MESSAGE_FRAGMENT on GiftMessage {
+}`, r = `fragment GIFT_MESSAGE_FRAGMENT on GiftMessage {
   __typename
   from
   to
   message
-}`, r = (`fragment GIFT_WRAPPING_FRAGMENT on GiftWrapping {
+}`, i = (`fragment GIFT_WRAPPING_FRAGMENT on GiftWrapping {
   __typename
   uid
   design
@@ -85,7 +85,7 @@ const e = `
     currency
     value
   }
-}`, u = `fragment CART_ITEM_FRAGMENT on CartItemInterface {
+}`, l = `fragment CART_ITEM_FRAGMENT on CartItemInterface {
   __typename
   uid
   quantity
@@ -142,16 +142,6 @@ const e = `
   product {
     name
     sku
-    price_tiers {
-      quantity
-      final_price {
-        value
-      }
-      discount {
-        amount_off
-        percent_off
-      }
-    }
     quantity
     gift_message_available
     gift_wrapping_available
@@ -232,16 +222,6 @@ const e = `
       price_range {
         ...PRICE_RANGE_FRAGMENT
       }
-      price_tiers {
-        quantity
-        final_price {
-          value
-        }
-        discount {
-          amount_off
-          percent_off
-        }
-      }
     }
     customizable_options {
       ...CUSTOMIZABLE_OPTIONS_FRAGMENT
@@ -282,9 +262,9 @@ const e = `
 ${e}
 ${_}
 ${a}
-${r}
 ${i}
-${n}`, c = `fragment CART_FRAGMENT on Cart {
+${r}
+${n}`, u = `fragment CART_FRAGMENT on Cart {
   id
   total_quantity
   is_virtual
@@ -386,14 +366,14 @@ ${n}`, c = `fragment CART_FRAGMENT on Cart {
     postcode
   }
 }
-${u}
+${l}
 ${t}`;
 export {
 t as APPLIED_GIFT_CARDS_FRAGMENT,
 n as AVAILABLE_GIFT_WRAPPING_FRAGMENT,
-c as CART_FRAGMENT,
-u as CART_ITEM_FRAGMENT,
+u as CART_FRAGMENT,
+l as CART_ITEM_FRAGMENT,
 a as DOWNLOADABLE_CART_ITEMS_FRAGMENT,
-i as GIFT_MESSAGE_FRAGMENT,
-r as GIFT_WRAPPING_FRAGMENT
+r as GIFT_MESSAGE_FRAGMENT,
+i as GIFT_WRAPPING_FRAGMENT
 };

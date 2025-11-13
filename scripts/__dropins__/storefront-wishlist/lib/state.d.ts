@@ -7,6 +7,8 @@ type State = {
     locale?: string;
     config?: StoreConfigModel | null;
     authenticated: boolean;
+    currentPage?: number;
+    pageSize?: number;
 };
 export declare const state: State;
 export {};
