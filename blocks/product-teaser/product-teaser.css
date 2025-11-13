@@ -10,7 +10,7 @@
 }
 
 .product-teaser:hover {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgb(0 0 0 / 10%);
   transform: translateY(-2px);
 }
 
@@ -241,7 +241,7 @@
 }
 
 /* High Contrast Mode Support */
-@media (prefers-contrast: high) {
+@media (prefers-contrast: more) {
   .product-teaser {
     border-width: 2px;
   }

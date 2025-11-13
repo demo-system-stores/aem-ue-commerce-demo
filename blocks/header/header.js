@@ -372,6 +372,7 @@ export default async function decorate(block) {
         ] = await Promise.all([
           import('@dropins/storefront-product-discovery/api.js'),
           import('@dropins/storefront-product-discovery/render.js'),
+          // eslint-disable-next-line import/no-unresolved
           import('@dropins/storefront-product-discovery/containers/SearchResults.js'),
           import('@dropins/tools/components.js'),
           import('@dropins/tools/lib.js'),

@@ -1,7 +1,10 @@
 // Product Discovery Dropins
+// eslint-disable-next-line import/no-unresolved
 import SearchResults from '@dropins/storefront-product-discovery/containers/SearchResults.js';
 import Facets from '@dropins/storefront-product-discovery/containers/Facets.js';
+// eslint-disable-next-line import/no-unresolved
 import SortBy from '@dropins/storefront-product-discovery/containers/SortBy.js';
+// eslint-disable-next-line import/no-unresolved
 import Pagination from '@dropins/storefront-product-discovery/containers/Pagination.js';
 import { render as provider } from '@dropins/storefront-product-discovery/render.js';
 import { Button, Icon, provider as UI } from '@dropins/tools/components.js';
